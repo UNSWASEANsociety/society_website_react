@@ -154,32 +154,43 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link href="/components">
-              <a className={classes.dropdownLink}>All components</a>
-            </Link>,
-             <Link href="/components">
-              <a className={classes.dropdownLink}>All components</a>
-            </Link>,
-             <Link href="/components">
-              <a className={classes.dropdownLink}>All components</a>
-            </Link>,
+            <LinkButton
+              href="/culturalimmersion/about"
+              buttonStyle={classes.dropdownLink}
+              color="transparent"
+            >
+              About
+            </LinkButton>,
+            <LinkButton
+              href="/culturalimmersion/speakers"
+              color="transparent"
+              buttonStyle={classes.dropdownLink}
+            >
+              Speakers
+            </LinkButton>,
+            <LinkButton
+              href="/culturalimmersion/schedule"
+              color="transparent"
+              buttonStyle={classes.dropdownLink}
+            >
+              Schedule
+            </LinkButton>,
           ]}
         />
       </ListItem>
-
 
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           navDropdown
-          buttonText="Events"
+          buttonText="Misc"
           buttonProps={{
             className: classes.navLink,
             color: "transparent",
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link href="/components">
+            <Link to="/components">
               <a className={classes.dropdownLink}>All components</a>
             </Link>,
           ]}

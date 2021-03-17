@@ -39,7 +39,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="Material Kit React"
+        brand="UNSW ASEAN society"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
