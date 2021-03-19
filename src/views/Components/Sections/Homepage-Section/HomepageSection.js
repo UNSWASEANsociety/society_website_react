@@ -9,6 +9,7 @@ import GridItem from "components/Grid/GridItem.js";
 import React from "react";
 import FadeIn from 'components/FadeIn/FadeIn';
 import EmbeddedPlayer from 'components/EmbeddedPlayer/EmbeddedPlayer';
+import styling from './HomepageSection.module.scss';
 
 const Link = () => {
   return (
@@ -60,17 +61,17 @@ export default function SectionBasics() {
         </Link>
 
         {/* Slogan banner */}
-        <div className={`${classes.sloganSection} ${classes.textCentered}`}>
+        <div className={styling.sloganSection}>
           <div className={classes.whiteTitle}>
-            <h2>Inspiring the Present</h2>
+            <h2 className={styling.title}>Inspiring the Present</h2>
           </div>
           <div className={`${classes.whiteTitle} ${classes.textCentered}`}>
-            <h2>Envisioning the Future</h2>
+            <h2 className={styling.title}>Envisioning the Future</h2>
           </div>
         </div>
 
         {/* Welcome message */}
-        <div className={`${classes.title} ${classes.textCentered}`}>
+        <div className={styling.title}>
           <h2>Welcome Message</h2>
         </div>
         <hr />

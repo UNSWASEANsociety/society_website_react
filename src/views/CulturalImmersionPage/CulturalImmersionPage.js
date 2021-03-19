@@ -13,8 +13,7 @@ import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import React from "react";
-import HomepageSection from './Sections/Homepage-Section/HomepageSection';
-
+import CulturalImmersionSection from './Sections/CulturalImmersionSection'
 
 const useStyles = makeStyles(styles);
 
@@ -50,7 +49,7 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <HomepageSection />
+        <CulturalImmersionSection />
       </div>
       <Footer />
     </div>
