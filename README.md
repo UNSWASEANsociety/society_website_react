@@ -1,3 +1,31 @@
-# ASEANSoc Website
+# UNSW ASEAN society Website using React
 
-Link: <a href="aseansoc.netlify.app">aseansoc.netlify.app</a>
+Using https://github.com/creativetimofficial/material-kit-react as starter
+
+## Links
+
+- demo: https://aseansoc.netlify.app/
+
+## Requirements
+
+- nodejs (version 10+)
+- npm
+- git
+
+## Setting up
+
+Getting repository
+
+        git clone <repo> <dir>
+
+Change to root directory
+
+        cd <dir>
+
+Installing project dependencies
+
+        npm install
+
+Starting development server
+
+        npm start
