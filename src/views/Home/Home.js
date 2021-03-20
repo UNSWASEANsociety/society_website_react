@@ -52,7 +52,7 @@ export default function Components(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <HomepageSection />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
