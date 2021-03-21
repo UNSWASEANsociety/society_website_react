@@ -16,7 +16,6 @@ import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
 
-import headerStyles from './Header.module.scss';
 import { Link } from "react-router-dom";
 import LinkButton from "./LinkButton";
 
@@ -67,13 +66,16 @@ export default function Header(props) {
   // const brandComponent = <Button className={classes.title}>{brand}</Button>;
 
   const brandComponent = (
-    <LinkButton href="/" buttonStyle={classes.title} style={{"border": "1px solid yellow"}}>
-      {brand}
-    </LinkButton>
+    // <LinkButton href="/" buttonStyle={classes.title}>
+    //   {brand}
+    // </LinkButton>
+    <Link to="/">
+      <Button className={classes.title} >{brand}</Button>
+    </Link>
   );
 
   return (
-    <AppBar className={`${appBarClasses} ${headerStyles.text}`}>
+    <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
         {leftLinks !== undefined ? brandComponent : null}
         <div className={classes.flex}>
@@ -110,7 +112,6 @@ export default function Header(props) {
         >
           <div className={classes.appResponsive}>
             {leftLinks}
-            ASS
             {rightLinks}
           </div>
         </Drawer>
