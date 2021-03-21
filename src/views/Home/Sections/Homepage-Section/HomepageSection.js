@@ -10,12 +10,7 @@ import React from "react";
 import FadeIn from 'components/FadeIn/FadeIn';
 import EmbeddedPlayer from 'components/EmbeddedPlayer/EmbeddedPlayer';
 import styling from './HomepageSection.module.scss';
-
-const Link = () => {
-  return (
-    <a href=""></a>
-  )
-}
+import { Link } from 'react-router-dom';
 
 const ceoImage = "https://images.unsplash.com/photo-1564106273110-e2965fcabb74?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8ZGF2aWR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60";
 
@@ -52,12 +47,10 @@ export default function SectionBasics() {
     <div className={classes.sections}>
       <div className={classes.container}>
 
-        <Link href="/CulturalImmersion">
-          <a>
-            <strong>
-              Cultural immersion
-            </strong>
-          </a>
+        <Link to="/CulturalImmersion">
+          <Button color="primary" variant="contained">
+          Cultural immersion [temp button]
+          </Button>
         </Link>
 
         {/* Slogan banner */}

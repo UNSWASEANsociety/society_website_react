@@ -15,6 +15,7 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
+import brandImage from 'assets/content/brandimage.png';
 
 import { Link } from "react-router-dom";
 import LinkButton from "./LinkButton";
@@ -70,7 +71,10 @@ export default function Header(props) {
     //   {brand}
     // </LinkButton>
     <Link to="/">
-      <Button className={classes.title} >{brand}</Button>
+      <Button className={classes.title} >
+        {/* <img src={brandImage} style={{"height": "55px"}}/> */}
+        {brand}
+      </Button>
     </Link>
   );
 
