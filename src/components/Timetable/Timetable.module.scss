@@ -65,7 +65,7 @@ pre{
 
   /** Sticky table styles **/
 .st_viewport{
-    background-color: rgb(62,148,236);
+    background-color: rgb(233, 233, 233);
     color: rgb(27,30,36);
     margin: 20px 0;
 }
@@ -119,4 +119,39 @@ pre{
 /* #   column */
 .st_column{
   padding: 10px 20px;
+  max-width: 400px;
 }
+
+.timeColumn {
+    width: 100px;
+}
+
+.agendaColumn {
+    width: 200px;
+}
+
+.descriptionColumn {
+    width: 400px;
+}
+
+// Scrollbar styles:
+.scrollBar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.59);
+	border-radius: 10px;
+	background-color: #373737;
+}
+
+.scrollBar::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.scrollBar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #dadada;
+}
+
