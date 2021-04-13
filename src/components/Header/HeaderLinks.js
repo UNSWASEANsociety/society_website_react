@@ -144,6 +144,16 @@ export default function HeaderLinks(props) {
       </ListItem>
 
       <ListItem className={classes.listItem}>
+        <LinkButton
+          href="/events"
+          color="transparent"
+          buttonStyle={classes.navLink}
+        >
+          Events
+        </LinkButton>
+      </ListItem>
+
+      <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           navDropdown

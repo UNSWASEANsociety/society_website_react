@@ -16,7 +16,7 @@ import CulturalImmersionPage from 'views/CulturalImmersionPage/CulturalImmersion
 import About from "views/CulturalImmersion/About";
 import Schedule from "views/CulturalImmersion/Schedule";
 import Speakers from "views/CulturalImmersion/Speakers";
-
+import Events from "views/Events"
 var hist = createBrowserHistory();
 
 ReactDOM.render(
@@ -25,6 +25,7 @@ ReactDOM.render(
       <Route path="/landing-page" component={LandingPage} />
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/login-page" component={LoginPage} />
+      <Route path="/events" component={Events} />
       <Route path="/culturalimmersion" component={CulturalImmersionPage} />
       {/* <Route path="/" component={Components} /> */}
       <Route path="/about" component={LoginPage} />
